@@ -17,6 +17,8 @@ function divide(num1,num2) {
     else return (num1/num2)
 }
 
+///window.addEventListener('keydown',(e)=> console.log(e));
+
 const calcBody = document.querySelector('.calc-body');
 var displayHistory = document.querySelector('.calc-history');
 var displayCurrent = document.querySelector('.calc-current-number');
@@ -31,17 +33,14 @@ function keyClick(e,displayCurrent) {
         displayCurrent.textContent = ''
         numEnteredBefore = 1;
         displayCurrent.textContent += e.target.textContent;
-        console.log('entring num');
     }
     else if (!numEnteredBefore && e.target.textContent === '0') {
         displayCurrent = document.querySelector('.calc-current-number');
         displayCurrent.textContent = '0';
-        console.log('entring zero');
     }
     else {
         displayCurrent = document.querySelector('.calc-current-number');
         displayCurrent.textContent += e.target.textContent;
-        console.log('entring num2');
 
     }
 }
