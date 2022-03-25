@@ -14,9 +14,11 @@ body {
 }
 
 .footer {
+    display: flex;
     margin-top: auto;
     justify-content: center;
 }
+
 
 .calc-body {
     display: flex;
@@ -28,6 +30,7 @@ body {
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+    margin-left: 0px;
 }
 
 button {
